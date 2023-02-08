@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPS Task Class Circle</title>
+</head>
+<body>
+    <script>
+
+    class Circle{
+        constructor(radius,color){
+            this.radius = radius;
+            this.color = color;
+        }
+
+        getRadius(){
+        console.log(`Radius of circle: ${this.radius}`)
+    }
+
+    getColor(){
+        console.log(`Color of circle: ${this.color}`)
+    }
+
+    getArea(){
+        const pi = 3.14;
+        console.log(`area of circle is: ${pi*(this.radius*this.radius)}`)
+    }
+
+    }
+
+    let circle = new Circle(2,"black")
+    circle.getRadius();
+    circle.getColor();
+    circle.getArea();
+
+    </script>
+</body>
+</html>

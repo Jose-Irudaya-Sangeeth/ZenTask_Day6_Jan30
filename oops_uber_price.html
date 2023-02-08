@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPS Task Uber Price</title>
+</head>
+<body>
+    <script>
+        
+        class Uber{
+        constructor(km,type){
+            this.km = km;
+            this.type = type;
+            return this.type = type;
+        }
+
+        getUberprice(type){
+            var amount_mini = 12;
+            var amount_sedan = 15;
+            var amount_suv = 18;
+            if(this.type === "Mini"){
+                console.log(`Uber Price for Mini is: ${amount_mini*(this.km)}`)
+            }
+            else if(this.type === "Sedan"){
+                console.log(`Uber Price for Sedan is: ${amount_sedan*(this.km)}`)
+            }
+            else if(this.type === "Suv"){
+                console.log(`Uber Price for Suv is: ${amount_suv*(this.km)}`)
+            }
+            else{
+                console.log("Enter valid Type");
+            }
+        }
+
+    }
+
+    var price = new Uber(2,"Mini")
+    var price1 = new Uber(2,"Sedan")
+    var price2 = new Uber(2,"Suv")
+    price.getUberprice()
+    price1.getUberprice()
+    price2.getUberprice()
+    </script>
+</body>
+</html>

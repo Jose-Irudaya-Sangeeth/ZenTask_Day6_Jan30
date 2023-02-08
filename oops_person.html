@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPS Task Person Class</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(name,height,gender,color,age){              //assigning the properties
+                this.name=name,
+                this.height=height,
+                this.gender=gender,
+                this.color=color,
+                this.age=age
+            }
+        }
+        var s1=new Person("jose",5.8,"male","grey",26)              //Creating an object
+        var s2=new Person("jeni",5.5,"female","white",22)
+        console.log(s1.name,s1.height,s1.gender,s1.color,s1.age)
+        console.log(s2.name,s2.height,s2.gender,s2.color,s2.age)
+    </script>
+</body>
+</html>
